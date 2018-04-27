@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+        <!-- Own CSS -->
+        <link rel="stylesheet" href="resources/css/master.css">
+        <title>Rijksmuseum paintings finder</title>
+    </head>
+    <body>
+        <div class="jumbotron jumbotron-fluid hero">
+            <div class="container">
+                <h1 class="display-4 hero-header">Rijksmuseum Paintings</h1>
+                <p class="lead hero-header-lead">Explore the best paintings in het rijksmuseum</p>
+            </div>
+        </div>
+        <!-- Modal is hidden when page loads - when user clicks an image it pops up  -->
+        <div class="modal" tabindex="-1" role="dialog" id="largeModal">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Painting</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <img src="http://lh3.googleusercontent.com/QjRm4UQbUvfY3H8MOPYjQKvMWWMIITAI3jVto147znHC3_dEEYKJF_UQsj7FZ59VxEzxaauQ98bUAwFLSfLW3Syiza3Q=s0" alt="" class="img-fluid img-modal">
+              </div>
+              <div class="modal-footer">
+                <p class="plaque"></p>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Container for results -->
+        <div class="container-fluid">
+            <div class="row mb-4">
+                <div class="col col-sm-6 m-auto">
+                    <form class="form">
+                        <label class="stand-out" for="searchByName">Search Artists</label>
+                        <input type="text" class="form-control" id="nameSearch" aria-describedby="searchByName" placeholder="Give us a Name">
+                        <small id="searchByCity" class="form-text text-muted">Just look at these beautiful paintings</small>
+                        <div class="text-center">
+                        <button type="submit" id="search" class="btn btn-info btn-lg my-1">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="jumbotron notFoundMessage">
+                <h1 class="display-4">Whoops</h1>
+                  <p class="lead">We couldn't find anything for <span id="searchError">your query</span></p>
+                  <hr class="my-4">
+                  <p>May we recommend <a href="#" class="clearSearch badge badge-light">Otto van Veen</a> <a href="#" class="clearSearch badge badge-light">Jan Lievens</a>  <a href="#" class="clearSearch badge badge-light">Bartholomeus van der Helst</a>  <a href="#" class="clearSearch badge badge-light">Vincent van Gogh</a></p>
+            </div>
+            <div class="row">
+                <div class="card-columns">
+                </div>
+            </div>
+            <button type="button" class="btn btn-info btn-lg btn-block showMoreButton">Show more paintings</button>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--  JS file -->
+    <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

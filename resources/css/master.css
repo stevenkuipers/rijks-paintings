@@ -1,0 +1,74 @@
+.hero {
+    background-color: rgb(171,186,171);
+    background-image:
+                linear-gradient(to right, rgba(255,255,255, .4), rgba(171,186,171, .4)), url('../images/hero.jpg');
+    background-repeat:
+                no-repeat,
+                no-repeat;
+    background-position:
+                bottom ,
+                center;
+    background-size:
+                auto,
+                cover;
+    -webkit-box-shadow: 0px 5px 50px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 5px 50px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 50px 5px rgba(0, 0, 0, 0.5)
+}
+
+.hero-header {
+    font-family: 'Monoton', cursive;
+    color: #FEFEFE;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.hero-header-lead {
+    color: #FEFEFE;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.stand-out {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(171,186,171);
+    background: linear-gradient(to left, rgba(255,255,255, .4), rgba(171,186,171, .4));
+    border-radius: .2rem;
+}
+
+.paintingDescription {
+    display: none;
+}
+
+.colorCodes {
+    display: none;
+    border-radius: 5px;
+}
+
+
+.show {
+    display: inherit;
+}
+
+.hidden {
+    display: none;
+}
+
+.PlaqueDescription {
+    display: none;
+}
+
+
+/* BOOTSTRAP OVERRIDE */
+.card-columns {
+    column-gap: 1rem;
+}
+
+.notFoundMessage {
+    background-color: lightsteelblue;
+    color: #FEFEFE;
+    background-image: url('http://lh3.googleusercontent.com/Ckjq-HkB2XhEsbuMsei0MR5fLTODfkcXY8qQTG-XLHVxE0jLO9DnSYaVE8n1kCrcm9AMKzoWB2w03LrY0v7eoj5hYw=s0');
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
